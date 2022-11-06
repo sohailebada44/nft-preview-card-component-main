@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    max-width: 100%;
+}
+main {
+    background-color: var(--Very-dark-blue-card-BG);
+    width: 375px;
+    border-radius: 1rem;
+    box-shadow: 2px -4px 20px 0px hsl(216deg 50% 16%);
+    margin-top: 25%;
+}
+.container img {
+    width: 334px;
+    margin: 20px 21px;
+    border-radius: 0.5rem;
+}
+.container div {
+    background-color: hsl(178, 100%, 50%, 50%);
+    width: 334px;
+    height: 334px;
+    position: absolute;
+    transform: translate(22px, -360px);
+    border-radius: 10px;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+.container div img {
+    width: 48px;
+    transform: translate(120px, 125px);
+}
+.container div:hover {
+    opacity: 100%;
+}
+h1 {
+    color: var(--White);
+    padding-left: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+h1, .avatar .text span {
+    transition: 0.2s;
+}
+h1:hover, .avatar .text span:hover, .container div {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p {
+    font-size: 18px;
+    color: var(--Soft-blue);
+    margin-left: 20px;
+    width: 300px;
+    word-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.measure {
+    display: flex;
+    justify-content: space-around;
+}
+.measure .number img {
+    margin-left: -42px;
+}
+.measure .number .speed {
+    margin-left: -24px;
+    color: var(--Cyan);
+}
+.measure .speed {
+    margin-top: -23px;
+}
+.measure .duration .days {
+    margin-top: -23px;
+    margin-left: 24px;
+    color: var(--Soft-blue);
+}
+hr {
+    opacity: 12%;
+    width: 372px;
+    margin-top: 30px;
+    width: 317px;
+    margin-left: 26px;
+}
+.avatar img {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 35px;
+    margin: 20px;
+}
+.avatar img {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 35px;
+    margin: -36px 20px;
+}
+.avatar .text {
+    margin-left: 50px;
+}
+.avatar .text span {
+    color: var(--White);
+}
